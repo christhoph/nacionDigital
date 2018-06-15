@@ -1,0 +1,11 @@
+{
+    "name": "naciondigital",
+    "version": "1.0.0",
+    "description": "Ejercicio de Entrevista -  Nación Digital",
+    "main": "public",
+    "scripts": {
+      "dev": "browser-sync start -s -f \" *.html, css/*.css, js/*.js \""
+    },
+    "author": "Cristopher Solis",
+    "license": "MIT"
+  }
