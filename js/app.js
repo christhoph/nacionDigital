@@ -23,10 +23,17 @@ $(() => {
 
             $('#box2').removeClass('rotation')
             $('#box1').addClass('rotation')
+
             if(inputSize != ''){
+
+                $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
                 $('#box2').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
+
             } else{
+
+                $('#box1').css({'height': `150px`, 'width': `150px`})
                 $('#box2').css({'height': `150px`, 'width': `150px`})
+
             }
 
         } else{
@@ -35,10 +42,17 @@ $(() => {
 
             $('#box1').removeClass('rotation')
             $('#box2').addClass('rotation')
-            if( boxSize == 0 ){
-                $('#box2').css({'height': `105px`, 'width': `105px`})
-            } else{
+
+            if(inputSize != ''){
+
+                $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
                 $('#box2').css({'height': `${boxSize}px`, 'width': `${boxSize}px`})
+
+            } else{
+
+                $('#box1').css({'height': `150px`, 'width': `150px`})
+                $('#box2').css({'height': `105px`, 'width': `105px`})
+
             }
 
         }
@@ -51,15 +65,33 @@ $(() => {
 
         if( $(window).innerWidth() > 576 ){
 
-            $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
-            $('#box2').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
+            if(inputSize != ''){
 
-        } else if( $(window).innerWidth() <= 576 ){
+                $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
+                $('#box2').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
+
+            } else{
+
+                $('#box1').css({'height': `150px`, 'width': `150px`})
+                $('#box2').css({'height': `150px`, 'width': `150px`})
+
+            }
+
+        } else{
 
             var boxSize = inputSize - (inputSize * 0.3)
 
-            $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
-            $('#box2').css({'height': `${boxSize}px`, 'width': `${boxSize}px`})
+            if(inputSize != ''){
+
+                $('#box1').css({'height': `${inputSize}px`, 'width': `${inputSize}px`})
+                $('#box2').css({'height': `${boxSize}px`, 'width': `${boxSize}px`})
+
+            } else{
+
+                $('#box1').css({'height': `150px`, 'width': `150px`})
+                $('#box2').css({'height': `105px`, 'width': `105px`})
+                
+            }
 
         }
 
