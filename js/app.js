@@ -19,8 +19,6 @@ $(() => {
 
         var inputSize = $('#size').val()
 
-        console.log(inputSize)
-
         if( $(window).innerWidth() > 576 ){
 
             $('#box2').removeClass('rotation')
