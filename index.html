@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio | Nación Digital</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDjA_nvfuL8du07aeGGZt3c1pDZ974qG38",
-            authDomain: "nacion-digital.firebaseapp.com",
-            databaseURL: "https://nacion-digital.firebaseio.com",
-            projectId: "nacion-digital",
-            storageBucket: "nacion-digital.appspot.com",
-            messagingSenderId: "92122144468"
-        };
-        firebase.initializeApp(config);
-    </script>
 
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio | Nación Digital</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-6 d-flex flex-column justify-content-center align-items-center boxes">
-                <div class="box__1" id="box1"></div>
-                <div class="box__2" id="box2"></div>
-            </div>
-        </div>
-        <div class="row d-flex flex-column align-items-center">
-            <div class="col-lg-6 col-sm-12 input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Tamaño</span>
+    <body>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center boxes">
+                    <div class="box__1" id="box1"></div>
+                    <div class="box__2" id="box2"></div>
                 </div>
-                <input type="number" class="form-control" id="size">
             </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-success mt-4 px-5" id="btn-size">Ver</button>
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-lg-6 col-sm-12 input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Tamaño</span>
+                    </div>
+                    <input type="number" class="form-control" id="size">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success mt-4 px-5" id="btn-size">Ver</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
 
-</body>
+    </body>
+
 </html>

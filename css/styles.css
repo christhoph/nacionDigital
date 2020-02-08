@@ -1,52 +1,48 @@
-
-.boxes{
-    height: 400px;
-    position: relative;
+.boxes {
+  height: 400px;
+  position: relative;
 }
 
-.box__1, .box__2{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    transition: all .5s ease;
+.box__1,
+.box__2 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  transition: all 0.5s ease;
 }
 
-.box__1{
-    border: 1px solid #0000ff;
+.box__1 {
+  border: 1px solid #0000ff;
 }
 
-.box__2{
+.box__2 {
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+}
+
+.rotation {
+  animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .box__1 {
     border: 1px solid #ff0000;
     border-radius: 50%;
-}
+  }
 
-.rotation{
-    animation: rotate 2.5s linear infinite;
-}
-
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-@media screen and (max-width: 576px){
-
-    .box__1{
-        height: 150px;
-        width: 150px;
-        border: 1px solid #ff0000;
-        border-radius: 50%;
-    }
-    
-    .box__2{
-        height: 105px;
-        width: 105px;
-        border: 1px solid #0000ff;
-        border-radius: 0;
-    }
-
+  .box__2 {
+    height: 105px;
+    width: 105px;
+    border: 1px solid #0000ff;
+    border-radius: 0;
+  }
 }
